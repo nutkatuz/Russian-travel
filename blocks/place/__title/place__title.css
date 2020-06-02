@@ -6,18 +6,11 @@
     font-weight: 900;
     font-size: 72px;
     line-height: 76px;
-    max-width: 460px;
-}
 
-@media all and (max-width: 1030px) {
-    .place__title {
-        max-width: 440px;
-    }
 }
 
 @media all and (max-width: 1000px) {    /*верно для  768. возможно лучше до 1023 продолжить*/
     .place__title {
-        max-width: 340px;      
         font-size: 42px;
         line-height: 46px;        /* or 110% */
     }
@@ -25,9 +18,12 @@
 
 @media all and (max-width: 767px) {
     .place__title {
-        max-width: 288px;
         font-size: 32px;
         line-height: 35px;        /* identical to box height, or 109% */
+    }
+}
+@media all and (max-width: 500px) {
+    .place__title {
         padding: 0 16px;
     }
 }

@@ -8,7 +8,7 @@
 
 .place {
     max-width: 1280px;
-    margin: 0 auto;
+    margin: 0;
     padding-bottom: 80px;
     display: grid;
     grid-template-columns: 45% auto;  /*minmax() не подходит, auto-fit смещает и не сохраняет пропорции и заданные ширины текста. 
@@ -19,6 +19,7 @@
         'title website'
         'image text';
 }
+
 .place:nth-last-of-type(1){
         padding-bottom: 0;
 }
@@ -32,13 +33,13 @@
 @media all and (max-width: 1023px) {
     .place {
         grid-gap: 48px 28px;
-
     }
 }
 
 @media all and (max-width: 767px) {
     .place {
         max-width: 90%; /*такого в макете нет, но у ребят в группе ругаются ревью, мне посоветовали отлепить карточку, чтоб блок не тянулся так сильно*/
+        margin:0 auto;
         grid-template-columns: 100%;
         grid-template-areas:
             'title'

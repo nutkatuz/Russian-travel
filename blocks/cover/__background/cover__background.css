@@ -51,6 +51,12 @@
     }
 }
 
+@media all and (max-width: 400px) {
+    .cover__background {
+/*Подогнать min-height: calc(480px*0,625);*/
+        min-height: 250px;
+    }
+}
 
 @media all and (max-width: 340px) {
     .cover__background {
