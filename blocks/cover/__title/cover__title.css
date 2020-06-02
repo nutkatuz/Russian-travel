@@ -1,0 +1,25 @@
+.cover__title {
+    max-width: 560px;
+    margin: 0;
+    text-align: center;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 76px;    /* or 106% */
+    z-index: 2;
+}
+
+@media all and (max-width: 500px) {
+    .cover__title {
+        max-width: 288px;
+        margin: 0;
+        font-size: 32px;
+        line-height: 35px; /* or 109% */
+    }
+}
+
+@media only screen and (max-width: 319px) {/* менее 320 */
+    .cover__title {
+        font-size: 20px;
+        line-height: 20px; /* избавляюсь от скролла на мелких экранах, не применяется стиль!!! */
+    }
+}

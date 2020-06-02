@@ -1,0 +1,35 @@
+.lead__subtitle {
+    max-width: 640px;
+    margin: 0 auto 64px;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;    /* or 120% padding:  0 0 64px 0;*/
+    text-align: center;
+}
+
+@media screen and (max-width: 1275px) {    /*добавлен*/
+    .lead__subtitle {
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .lead__subtitle {
+        margin-bottom: 56px;
+    }
+}
+
+@media all and (max-width: 760px) {
+    .lead__subtitle {
+        font-size: 16px;
+        line-height: 20px;        /* or 125% */
+        max-width: 288px;
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 319px) {/* менее 320 */
+    .lead__subtitle {
+        font-size: 20px; /* избавляюсь от скролла на мелких экранах */
+    }
+}

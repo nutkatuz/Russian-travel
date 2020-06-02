@@ -1,0 +1,26 @@
+@import url('./__nav/footer__nav.css');
+@import url('./__ul/footer__ul.css');
+@import url('./__copyright/footer__copyright.css');
+@import url('./__link/footer__link.css');
+
+.footer {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 92px 48px 24px 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+@media all and (max-width: 780px) {
+    .footer {
+        padding: 88px 24px 24px 24px;        /*это уже в линию на 768*/
+    }
+}
+
+@media all and (max-width: 680px) {
+    .footer {
+        padding: 64px auto 24px 16px;        /*колонка*/
+        display: block;
+    }
+}

@@ -1,0 +1,36 @@
+.places {
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 0 148px;
+}
+
+@media screen and (max-width: 1279px) {
+    .places {
+        max-width: 1024px;
+        padding: 0 48px;
+    }
+}
+
+@media all and (max-width: 1023px) {
+    .places {
+        min-width: 720px;
+        max-width: 900px;
+        padding: 0 24px;
+    }
+}
+
+@media all and (max-width: 767px) {
+    .places {
+        min-width: 320px;
+        max-width: 767px;
+        padding: 0;
+    }
+}
+
+
+@media only screen and (max-width: 319px) {/* менее 320 */
+    .places {
+        max-width: 100vw; /* избавляюсь от скролла на мелких экранах */
+        min-width: 0;
+    }
+}

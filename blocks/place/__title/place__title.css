@@ -1,0 +1,40 @@
+.place__title {
+    grid-area: title;
+    margin: 0;
+    padding: 0;
+    grid-area: title;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 76px;
+    max-width: 460px;
+}
+
+@media all and (max-width: 1030px) {
+    .place__title {
+        max-width: 440px;
+    }
+}
+
+@media all and (max-width: 1000px) {    /*верно для  768. возможно лучше до 1023 продолжить*/
+    .place__title {
+        max-width: 340px;      
+        font-size: 42px;
+        line-height: 46px;        /* or 110% */
+    }
+}
+
+@media all and (max-width: 767px) {
+    .place__title {
+        max-width: 288px;
+        font-size: 32px;
+        line-height: 35px;        /* identical to box height, or 109% */
+        padding: 0 16px;
+    }
+}
+
+@media only screen and (max-width: 319px) {/* менее 320 */
+    .place__title {
+        font-size: 20px;
+        line-height: 20px; /* избавляюсь от скролла на мелких экранах */
+    }
+}

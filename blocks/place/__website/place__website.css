@@ -1,0 +1,15 @@
+.place__website {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin: 0;
+    grid-area: website;
+    max-width: 456px;
+}
+
+@media screen and (max-width: 767px) {
+    .place__website {    /*нужно чтоб был одинаковый с брейкпоинтом плэйс в одну колонку, поэтому такое*/
+        display: none;
+    }
+}

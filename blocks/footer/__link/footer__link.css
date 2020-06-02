@@ -1,0 +1,29 @@
+.footer__link {
+    text-decoration: none;
+    color: white;
+    margin: 0 18px 0 0;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.footer__link:hover {
+    opacity: 0.8;
+    transition: .3s ease;
+}
+
+@media all and (max-width: 680px) {
+    .footer__link {
+        font-size: 24px;
+        line-height: 24px;
+        /* identical to box height, or 100% */
+        margin: 0 0 32px 0;
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 319px) {/* менее 320 */
+    .footer__link {
+        font-size: 20px;
+        line-height: 20px; /* избавляюсь от скролла на мелких экранах, не применяется стиль!!! */
+    }
+}

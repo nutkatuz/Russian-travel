@@ -1,0 +1,15 @@
+.place__text {
+    grid-area: text;
+    max-width: 1280px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+@media all and (max-width: 500px) {
+    .place__text {     /*  лучше задать 100%, но не по макету. не растягивается}*/
+        padding: 0 16px;
+        max-width: 90%; 
+    }
+}

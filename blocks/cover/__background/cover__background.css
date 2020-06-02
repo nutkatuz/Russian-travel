@@ -1,0 +1,60 @@
+.cover__background {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 100%;
+        min-height: 740px;
+    background-image: url("../../../images/cover-trains.jpg");
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+}
+
+.cover__background::before {
+    content: '';
+    background-color: #2a2c2f;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.3;
+}
+
+.cover__background:hover::before {
+    opacity: 0.8;
+}
+
+@media all and (max-width: 1030px) {
+    .cover__background {
+/*Подогнать min-height: calc(1024px*0,625);*/
+        min-height: 640px;
+    }
+}
+
+@media all and (max-width: 780px) {
+    .cover__background {
+/*Подогнать min-height: calc(768px*0,625);*/
+        min-height: 480px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .cover__background {
+/*Подогнать min-height: calc(480px*0,625);*/
+        min-height: 300px;
+    }
+}
+
+
+@media all and (max-width: 340px) {
+    .cover__background {
+/*Подогнать min-height: calc(320px*0,625);*/
+        min-height: 200px;
+    }
+}

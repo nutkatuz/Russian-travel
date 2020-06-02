@@ -1,0 +1,24 @@
+.lead__title{
+    max-width: 720px;
+    margin: 0 auto 32px;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 100px;    /* or 104% */
+    text-align: center;
+}
+
+@media all and (max-width: 767px) {
+    .lead__title {
+        max-width: 288px;
+        font-size: 40px;
+        line-height: 44px;
+        margin-bottom: 16px;
+    }
+}
+
+@media only screen and (max-width: 319px) {/* менее 320 */
+    .lead__title {
+        font-size: 20px;
+        line-height: 20px; /* избавляюсь от скролла на мелких экранах, не применяется стиль!!! */
+    }
+}

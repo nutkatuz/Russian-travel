@@ -1,0 +1,36 @@
+@import url('./__item/photo-grid__item.css');
+
+.photo-grid {
+   max-width: 1280px; /*не обязательно*/
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));/* 284 - это min ширина ячейки по макету для экранов от 1270 и больше*/
+   grid-gap: 16px;
+   padding: 92px 48px;
+}
+
+@media screen and (max-width: 1030px) { /*это для 1024, паддинг сохраняется*/
+   .photo-grid {
+      grid-gap: 14px;
+   }
+}
+
+@media only screen and (max-width: 780px) {/* это для 768 */
+   .photo-grid {
+      padding: 88px 48px;
+      grid-gap: 16px;
+   }
+}
+
+@media only screen and (max-width: 500px) {/* это для 320 */
+   .photo-grid {
+      padding: 64px 16px;
+      grid-gap: 12px;
+   }
+}
+
+@media only screen and (max-width: 319px) {/* менее 320 */
+   .photo-grid {
+      grid-template-columns: repeat(1, minmax(0, 280px));/* избавляюсь от скролла на мелких экранах */
+   }
+}

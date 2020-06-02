@@ -1,0 +1,15 @@
+.intro__title {
+    max-width: 100%; /*width: 690px;*/
+    margin: 0;
+    padding: 0;
+    font-weight: 900;
+    font-size: 54px;
+    line-height: 58px;  /* identical to box height, or 107% */
+}
+
+@media all and (max-width: 340px) {
+    .intro__title {
+        font-size: 32px;
+        line-height: 35px; /* or 109% */
+    }
+}
