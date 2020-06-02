@@ -1,4 +1,4 @@
-# [Путешествия по России](https://nutkatuz.github.io/russian-travel/) - проект в рамках обучения по профессии Frontend.
+# [Путешествия по России](https://nutkatuz.github.io/Russian-travel/) - проект в рамках обучения по профессии Frontend.
 
 ### Описание проекта
 
